@@ -1,15 +1,14 @@
 {
   "name": "Codesmith Hackathon",
+  "description": "Changes the current body color to one of your choice",
   "version": "1.0",
-  "description": "Build an Extension!",
-  "permissions": ["storage"],
-  "background": {
-    "scripts": ["src/main.js"],
-    "persistent": false
-  },
+  "permissions": [
+    "activeTab"
+  ],
   "browser_action": {
-    "default_icon": "assets/codesmith-logo.png",
-    "popup": "index.html"
+      "default_title": "Set this page's color.",
+      "default_icon": "codesmith-logo.png",
+      "default_popup": "popup.html"
   },
   "manifest_version": 2
 }
